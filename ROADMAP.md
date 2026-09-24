@@ -34,14 +34,15 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 - ✅ Privacy: Ghana Card details, legal names and passwords never exposed publicly
 - 🟡 Ghana Card verification, Layer 1: stylist side tested; admin reject and approve not yet tested
 - 🟡 Welcome pop-up after login and "Signed in as" label: live, not yet tested
+- 🟡 Security fixes: customer phone numbers no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend)
 
 ## Phase 1 — Launch blockers
 
 These stop the core journey from working. They come first.
 
-- ⬜ Admin: approve new shops, so new professionals become visible to customers (`backend ready`)
-- ⬜ Professional: accept, decline and complete requests from the dashboard (`backend ready`)
-- ⬜ Customer: send a request or booking from a shop page (`backend ready`)
+- 🟡 Admin: approve new shops, so new professionals become visible to customers (on staging)
+- 🟡 Professional: accept, decline and complete requests from the dashboard, with call and WhatsApp buttons (on staging)
+- 🟡 Customer: send a request or booking from a shop page, with date and time (on staging)
 
 ## Phase 2 — Interface foundation
 
@@ -73,7 +74,7 @@ These stop the core journey from working. They come first.
 ## Phase 5 — Professional workspace
 
 - 🔨 Home: today, pending requests, next actions (basic version live)
-- ⬜ Real appointment dates and times, so "who's coming today" works (`backend needed`)
+- 🔨 Real appointment dates and times: stored with every new request; "who's coming today" view still to build
 - ⬜ Calendar: day view first (needs the item above)
 - ⬜ Services: add, edit, price, duration (`backend ready`)
 - ⬜ Shop and profile editing: photos, bio, availability, location (`backend ready`)
@@ -88,7 +89,7 @@ These stop the core journey from working. They come first.
 
 - 🔨 Separate admin environment (basic version live)
 - 🟡 ID verification queue (built, not yet tested)
-- ⬜ Shop review queue (see Phase 1)
+- 🟡 Shop review queue (see Phase 1)
 - ⬜ Reports and account restrictions (`backend ready`)
 - ⬜ Professionals and users: search, table, detail panel (`backend ready`)
 - ✅ Audit log of admin actions
