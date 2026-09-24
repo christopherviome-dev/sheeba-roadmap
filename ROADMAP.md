@@ -34,7 +34,7 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 - ✅ Privacy: Ghana Card details, legal names and passwords never exposed publicly
 - 🟡 Ghana Card verification, Layer 1: stylist side tested; admin reject and approve not yet tested
 - 🟡 Welcome pop-up after login and "Signed in as" label: live, not yet tested
-- 🟡 Security fixes: customer phone numbers no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend)
+- 🟡 Security fixes: customer names, phone numbers and emergency contacts no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend; name and phone privacy confirmed live by Christopher)
 
 ## Phase 1 — Launch blockers
 
@@ -91,6 +91,7 @@ These stop the core journey from working. They come first.
 - 🟡 ID verification queue (built, not yet tested)
 - 🟡 Shop review queue (see Phase 1)
 - ⬜ Reports and account restrictions (`backend ready`)
+- ⬜ Public shop data still lists follower and like ID codes: show counts instead, keeping follow buttons working (low risk)
 - ⬜ Professionals and users: search, table, detail panel (`backend ready`)
 - ✅ Audit log of admin actions
 
