@@ -42,17 +42,18 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 
 These stop the core journey from working. They come first.
 
-- 🟡 Admin: approve new shops, so new professionals become visible to customers (on staging)
+- 🟡 Admin: approve new shops, so new professionals become visible to customers: card grid with a detail panel, bright admin theme (tested on staging by Christopher; goes live with the October 1 release)
 - 🟡 Professional: accept, decline and complete requests from the dashboard, with call and WhatsApp buttons (on staging)
 - 🟡 Customer: send a request or booking from a shop page, with date and time (on staging)
 
 ## Phase 2 — Interface foundation
 
-- ⬜ Mobile-first responsive layout, plus tablet landscape for shop counters
-- ⬜ Design tokens (spacing, type sizes, radius, colours) and core components: buttons, cards, inputs, tabs, drawers, modals
+- 🟡 Mobile-first layout: bottom tab bar on phones, top tabs on larger screens (on staging); tablet-landscape polish continues page by page
+- 🔨 Design tokens: colours done (named by meaning, every text colour checked for readability in both themes); spacing, type sizes and radius still to do
+- 🟡 Light, dark and Auto themes: readable in both, works on older phones, no white flash on load (on staging)
 - 🟡 Toast pop-ups (built and live, reusable)
-- ⬜ Consistent loading, error and empty states that tell the user what to do next
-- ⬜ App shell with role-aware navigation, kept short (not every feature becomes a nav item)
+- 🟡 Shared loading, error and empty states with a next step (on staging; used on Discover and My Requests, added to other lists as they're built)
+- 🟡 App shell: one navigation on every page, role-aware (Admin tab only for admins), kept short (on staging)
 
 ## Phase 3 — Discovery
 
@@ -143,6 +144,7 @@ Everything above must be ✅ before inviting the public. Everything below comes 
 
 ## Decisions log
 
+- **Brand pink for buttons:** #e31f64 instead of #e63875 (same hue, 5.5% deeper) so white button text is readable (4.52:1). Christopher may revert.
 - **Launch line position:** agreed by Christopher.
 - **Device priority:** mobile first, then tablet landscape, then desktop. Confirmed: a phone-friendly web app now, Play Store app later.
 - **Discovery content:** style names can be collected freely. Photos only from sources that allow commercial use, credited and labelled as inspiration, never presented as a professional's work. Trending is based on real engagement on Sheeba.
