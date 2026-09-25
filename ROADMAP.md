@@ -34,6 +34,8 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 - ✅ Privacy: Ghana Card details, legal names and passwords never exposed publicly
 - 🟡 Ghana Card verification, Layer 1: stylist side tested; admin reject and approve not yet tested
 - 🟡 Welcome pop-up after login and "Signed in as" label: live, not yet tested
+- 🟡 Login accepts every normal way of writing a Ghana number (0544…, +233 54…, with spaces)
+- 🟡 Navigation between Discover, My Shop and Admin, and Admin's own login page (on staging)
 - 🟡 Security fixes: customer names, phone numbers and emergency contacts no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend; name and phone privacy confirmed live by Christopher)
 
 ## Phase 1 — Launch blockers
@@ -84,6 +86,7 @@ These stop the core journey from working. They come first.
 - ⬜ Earnings statement: recorded service value, not payments (`backend ready`)
 - ⬜ Share my shop: link, WhatsApp, QR code (`backend ready`)
 - ⬜ Apprentice and staff access: the MVP version of the trainee system (`backend ready`)
+- 🟡 Change password, for professionals and customers (on staging)
 
 ## Phase 6 — Admin control center
 
@@ -91,6 +94,8 @@ These stop the core journey from working. They come first.
 - 🟡 ID verification queue (built, not yet tested)
 - 🟡 Shop review queue (see Phase 1)
 - ⬜ Reports and account restrictions (`backend ready`)
+- 🟡 Password recovery: "Forgot password?" for everyone, admin help queue confirmed by calling the number on the account, temporary password that must be changed (on staging)
+- ⬜ Limit repeated wrong-password attempts, to stop password guessing (`backend needed`)
 - ⬜ Public shop data still lists follower and like ID codes: show counts instead, keeping follow buttons working (low risk)
 - ⬜ Professionals and users: search, table, detail panel (`backend ready`)
 - ✅ Audit log of admin actions
