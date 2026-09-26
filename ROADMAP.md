@@ -55,7 +55,7 @@ These stop the core journey from working. They come first.
 - 🟡 Light, dark and Auto themes: readable in both, works on older phones, no white flash on load (tested on staging by Christopher)
 - 🟡 Toast pop-ups (built and live, reusable)
 - 🟡 Shared loading, error and empty states with a next step (on staging; used on Discover and My Requests, added to other lists as they're built)
-- 🟡 App shell: one navigation on every page, role-aware (Admin tab only for admins), kept short (tested on staging by Christopher)
+- 🟡 App shell: one navigation on every page, role-aware (Admin tab only for admins), kept short (tested on staging by Christopher); now also shows customers Appointments, My Sheeba and Saved, and visitors a Sign in tab (built; held on hold/part1 until the combined release)
 
 ## Phase 3 — Discovery
 
@@ -73,9 +73,10 @@ These stop the core journey from working. They come first.
 ## Phase 4 — Customer workspace
 
 - 🟡 Customer accounts: register and log in (built, not yet tested on the new site)
-- ⬜ My Sheeba: history, saved styles, Save This Style, Remind Me, due soon (`backend ready`)
-- ⬜ Appointments: upcoming, pending, completed (`backend ready`)
-- ⬜ Saved shops (`backend ready`)
+- 🟡 My Sheeba: what's coming up, what's due (reminders with pause/remove), saved styles with photos and notes, invite code, account settings (built; held on hold/part1 until the combined release)
+- 🟡 Appointments (customer): Upcoming and Past, shop names, dates, prices in the right currency; Book again, Save this style, Remind me (built; held on hold/part1 until the combined release)
+- 🟡 Saved shops, and a Save shop button on every shop page (built; held on hold/part1 until the combined release)
+- 🟡 Customer privacy and safety fixes: Saved shops no longer sends shop owners' ID documents, legal names or phone numbers; nobody can follow as someone else; Save This Style photos must be real uploads; Book again has the same checks as booking; Remind Me intervals 1 week to 1 year (built; held on hold/part1 until the combined release)
 - ⬜ Messages, split view on larger screens (`backend ready`)
 - ⬜ **Next update:** customer QR: a logged-in professional scans it to check the customer in, link the visit to their history and add them as a customer, and the customer confirms on their own phone; anyone else who scans sees nothing personal (`backend needed`)
 
