@@ -8,6 +8,7 @@ Vision lives in the Master Blueprint. Interface rules live in the MVP Interface 
 - ⬜ Not started
 - 🔨 In progress
 - 🟡 Built, awaiting test
+- ⏸ On hold, waiting for something from Christopher
 - ✅ Live and verified
 
 **The rule:** nothing becomes ✅ until Claude has verified it live **and** Christopher has tested it himself.
@@ -60,6 +61,7 @@ These stop the core journey from working. They come first.
 
 - 🟡 Visual Discover: Live strip, rows (Near you, New looks, Loved on Sheeba, Popular this week, Professionals), masonry Explore feed, search Focus mode, context panel that opens in place (on staging)
 - 🟡 Lean Discover feed: small photo versions and no private data, about 25x less mobile data than loading full shops (on staging)
+- ⏸ Category drawings: ON HOLD. The first draft didn't represent the categories well; text categories stay until Christopher provides proper designs to build from
 - 🟡 Work tiles (photo, service, price, heart) and professional cards (availability, price from, how they work) (on staging)
 - 🔨 Public professional page: photos, work per service, How I work, a Book button at the top, visits counted (on staging); reviews and portfolio gallery still to do
 - ⬜ Style library: named styles by category, with other names for search (`backend needed`)
@@ -75,6 +77,7 @@ These stop the core journey from working. They come first.
 - ⬜ Appointments: upcoming, pending, completed (`backend ready`)
 - ⬜ Saved shops (`backend ready`)
 - ⬜ Messages, split view on larger screens (`backend ready`)
+- ⬜ **Next update:** customer QR: a logged-in professional scans it to check the customer in, link the visit to their history and add them as a customer, and the customer confirms on their own phone; anyone else who scans sees nothing personal (`backend needed`)
 
 ## Phase 5 — Professional workspace
 
@@ -87,7 +90,8 @@ These stop the core journey from working. They come first.
 - ⬜ Customers: list plus detail, private notes, history, due soon (`backend ready`)
 - ⬜ Messages (`backend ready`)
 - ⬜ Earnings statement: recorded service value, not payments (`backend ready`)
-- ⬜ Share my shop: link, WhatsApp, QR code (`backend ready`)
+- 🟡 Sheeba code for every account (e.g. K7M 2QX): permanent for life across roles, random, never guessable; short link /u/CODE; QR to show, download, print for the salon and share on WhatsApp; older accounts get theirs automatically (built; held on branch hold/part1 until the combined release)
+- 🟡 Invite rewards: GH₵1 when someone joins with your code and completes their first job; shown under Share & earn (professionals) and My Requests (customers); admin reviews each qualifying job, pays by hand and records the reference; flag when the inviter was on the job (built; held on branch hold/part1 until the combined release)
 - ⬜ Apprentice and staff access: the MVP version of the trainee system (`backend ready`)
 - 🟡 Change password, for professionals and customers (on staging)
 
@@ -112,6 +116,9 @@ Not all of this is code.
 - ⬜ End-to-end journey tests: customer, professional, admin
 - ⬜ Device checks: phone, tablet landscape, desktop
 - ⬜ Ask NIA whether regulation L.I. 2523 applies to Sheeba's ID checks
+- ⬜ **Next update (Part 2):** works outside Ghana: country chosen at signup; currency, phone formats, distances (miles in the UK), ID documents per country instead of only the Ghana Card; Discover shows shops in your own country
+- ⬜ Clear all test data before launch: test shops, test ID submissions, and any photo not taken by the professional themselves
+- ⬜ Sheeba Help: one help guide written from the real app, with an assistant that answers only from it; a Help chat inside Sheeba (reaches everyone) and the existing Telegram bot connected to the same brain; anything account-specific handed to the admin as a ticket; never asks for passwords or ID numbers; WhatsApp later (Meta approval and fees); Discord skipped
 - ⬜ Point sheeba.online to the new site
 - ⬜ Retire the old versions once the switch is confirmed
 
@@ -154,3 +161,5 @@ Everything above must be ✅ before inviting the public. Everything below comes 
 - **Points naming:** existing points are professional growth points. Glow Points is a separate, future customer loyalty system. This corrects the rename to-do in Blueprint v3.
 - **Trainee system:** decided (Option A). Apprentice and staff access is the MVP version; the full trainee workspace comes after launch, following the Professional/Shop split.
 - **Netlify credits:** no releases to `main` until October 1 unless something is broken.
+- **Invite rewards:** GH₵1 per invited person's first completed job, paid by hand by Christopher from his own funds after reviewing each one in Admin. Rewards are recorded in cedis for every country until another currency's amount is set.
+- **International from the start:** Sheeba must work for people outside Ghana (first case: the UK). Location decides currency, formats and ID documents.
