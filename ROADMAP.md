@@ -40,6 +40,36 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 - 🟡 Security fixes: customer names, phone numbers and emergency contacts no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend; name and phone privacy confirmed live by Christopher)
 - 🟡 Shop data protection: every field checked, photos must be real uploads (no tracking images), per-photo and per-shop storage limits so no shop can lock itself out
 
+## Feedback round 1 (from Christopher's full test) — next build
+
+Build order to be confirmed once Christopher's feedback is complete (first proposal: A → E → B → D → C, with F, G, H to slot in).
+
+- 🟡 A. Accidental pull-down refresh wiped half-filled forms: switch off pull-to-refresh app-wide and keep half-filled forms through reloads (never passwords) (built; held on hold/feedback1)
+- 🟡 A. Location control becomes a small on/off icon, like a phone's location toggle (built; held on hold/feedback1)
+- 🟡 A. Countries shown as flag + code (🇬🇭 GH, 🇬🇧 UK) (built; held on hold/feedback1)
+- 🟡 E. Every country at signup (searchable, flag + name); Ghana and UK keep full setup; other countries get their currency, international phone numbers, and passport / national ID / driving licence verification; uses a maintained open-source country list (built; held on hold/feedback1)
+- ⬜ B. Feed follows the user's location automatically; a small "📍 City · GH" label opens change-location / compare instead of big country buttons
+- ⬜ B. "Any budget" replaced by real local price ranges from what professionals in the area charge, per category ("Up to GH₵120 · typical near you")
+- ⬜ B. Compare prices across cities and countries (within a country exact; across countries each local price plus a clearly marked approximate conversion)
+- ⬜ B. For stylists: "what others nearby charge" beside their prices
+- ⬜ B. Shops choose a city (area stays as the neighbourhood); a place's price range shows only once 3+ professionals there have prices
+- ⬜ D. Two-level services: Services (Hair styling, Barbering, Makeup, Nails, Lashes & brows, Skin & spa…) each with their own styles; Barbering is a service, not a style
+- ⬜ D. Professionals can add an activity that isn't listed: shows on their shop at once, goes to admin review, becomes available to everyone once approved
+- ⬜ C. Optional customer onboarding after signup: "Show me styles for" (men's grooming / women's / both / prefer not to say) and "Pick your 3 favourites"; feed ranking uses it (men see barbering first unless their favourites include braids, locs, etc.); editable in My Sheeba; never shown to professionals
+- ⬜ F. Invite rewards become future coupons: no cash while Sheeba takes no payments; rewards build up (shown in money terms) and become coupon codes for a free or discounted service once Sheeba is monetised; admin "mark as paid" becomes a ledger. BUG: UK accounts show "GH₵1". DECIDED: every invite is worth the equivalent of GH₵1 at the real exchange rate; rewards recorded in cedis (one clean liability figure), shown as the local equivalent at today's rate (e.g. GH₵1 ≈ £0.07), converted at that day's rate when coupons are issued; daily rates from an exchange-rate source (shared with the cross-country price comparison)
+- ⬜ F. Founding members: every account gets a signup number (existing accounts numbered by join date); members #1–1,000 are founding members; the 1,000th signup is celebrated as a milestone; friendly name-based code (e.g. AKUA0042) for sharing and invites, while the QR carries a hidden secret for check-in (friendly codes are guessable)
+- ⬜ F. Terms and Privacy pages (needed before launch anyway), including an optional clause: professionals may choose to reward customers who refer others
+- 🟡 G. Customers never see My Shop: customer tabs are Discover, Appointments, My Sheeba, Saved; professionals enter through a separate "For professionals" entrance (built; held on hold/feedback1)
+- 🟡 G. Share button opens the phone's own share menu (WhatsApp, Instagram, TikTok, Facebook, SMS…), with buttons as a fallback on computers (built; held on hold/feedback1)
+- 🟡 G. Invite page adds "I'm training (apprentice)": short signup asking for the supervisor's code; the shop owner approves the link (built; held on hold/feedback1)
+- 🟡 G. Phone numbers the international way: flag + dial-code picker (🇬🇧 +44) on every signup and login; starts on the inviter's country (built; held on hold/feedback1)
+- 🟡 G. The invite code at signup explained: "Invited by Grace's Studio", with a way to change it (built; held on hold/feedback1)
+- 🟡 G. Customer self check-in: a customer with an appointment today scans the shop's QR on arrival and gets "I'm here: check in" (built; held on hold/feedback1)
+- ⬜ H. A feed that learns from behaviour (what people view, linger on, heart, save, search and book), plus voice search the user chooses to use (tap the mic, say what you want). No secret listening: illegal under Ghana and UK data law, blocked by browsers, and it would destroy trust
+- ⬜ H. Video feed of professionals' work (scrolling, like Reels): needs cloud storage with automatic compression first, and data-saving playback (no autoplay on mobile data unless chosen)
+- ⬜ D. Load Christopher's style spreadsheet (received: 15 rows, Pexels, credited) into the style library: 11 distinct styles, with the 4 general braiding photos merged in as extra photos; shown only as "Inspiration"
+- ⏸ Christopher to gather more styles in the same format: men's barbering (fades, low cut, waves, beard, shape-ups), makeup, nails, lashes
+
 ## Phase 1 — Launch blockers
 
 These stop the core journey from working. They come first.
@@ -117,7 +147,8 @@ Not all of this is code.
 - ⬜ Recruit the first real professionals, and encourage them to upload and tag their own work
 - ⬜ End-to-end journey tests: customer, professional, admin
 - ⬜ Device checks: phone, tablet landscape, desktop
-- ⬜ Ask NIA whether regulation L.I. 2523 applies to Sheeba's ID checks
+- ⬜ URGENT: ask NIA whether regulation L.I. 2523 applies to Sheeba's ID checks (its transition period ends 2 November 2026)
+- ⬜ Automated verification (Layer 2): a provider connected to NIA's records checks the card and matches a live selfie; clear matches approved automatically, clear failures rejected automatically, only borderline cases go to the admin. Build the automatic pipeline with a provider plug-in slot now; switch on when Christopher has a provider account (per-check fees; ideally one provider covering Ghana Cards and UK documents). Also needs: Sheeba registered as a business, and registration with Ghana's Data Protection Commission
 - 🟡 Works outside Ghana (Ghana and the UK to start; adding a country = one entry): country at signup sets the shop's currency; phone logins in any local or international format; miles in the UK; ID documents per country (UK: passport, driving licence or residence permit; duplicates caught across document types); Discover shows your own country's shops with local budgets; WhatsApp links per country (built; held on hold/part1 until the combined release)
 - 🟡 Phone numbers stored in one tidy form, so a number saved with spaces can be found from any format (checked: no existing account needed fixing)
 - ⬜ Clear all test data before launch: test shops, test ID submissions, and any photo not taken by the professional themselves
@@ -142,9 +173,8 @@ Everything above must be ✅ before inviting the public. Everything below comes 
 - Glow Points: customer loyalty (a new system, separate from professional points)
 - Turn professional points into quiet ranking signals instead of public badges
 - Budget-to-service search ("what can I get for my budget?")
-- Ghana Card Layer 2: automatic NIA lookup and selfie match (needs a provider and fees)
 - Phone number verification by SMS
-- Payments: switch on Paystack
+- Payments (decision pending, Claude's recommendation: not at launch): payments happen directly between customer and stylist (cash or MoMo) at first; the likely first use later is an OPTIONAL deposit against no-shows, via Paystack split payments straight to the stylist's Mobile Money, with Sheeba taking 0% (only Paystack's own fee). The secure Paystack module already exists on the backend, unused
 - Community feedback from Telegram in Admin
 - Admin analytics
 - Move photos to cloud storage with automatic small versions (keeps data costs low as Sheeba grows past a few hundred shops)
@@ -164,5 +194,5 @@ Everything above must be ✅ before inviting the public. Everything below comes 
 - **Points naming:** existing points are professional growth points. Glow Points is a separate, future customer loyalty system. This corrects the rename to-do in Blueprint v3.
 - **Trainee system:** decided (Option A). Apprentice and staff access is the MVP version; the full trainee workspace comes after launch, following the Professional/Shop split.
 - **Netlify credits:** no releases to `main` until October 1 unless something is broken.
-- **Invite rewards:** GH₵1 per invited person's first completed job, paid by hand by Christopher from his own funds after reviewing each one in Admin. Rewards are recorded in cedis for every country until another currency's amount is set.
+- **Invite rewards (updated):** no cash payouts while Sheeba takes no payments. Rewards (the equivalent of GH₵1 per invited person's first completed job, in every country, at the real exchange rate) build up in each account and become coupon codes for a free or discounted service once Sheeba is monetised.
 - **International from the start:** Sheeba must work for people outside Ghana (first case: the UK). Location decides currency, formats and ID documents.
