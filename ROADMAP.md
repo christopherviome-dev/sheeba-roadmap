@@ -76,15 +76,16 @@ These stop the core journey from working. They come first.
 - 🟡 My Sheeba: what's coming up, what's due (reminders with pause/remove), saved styles with photos and notes, invite code, account settings (built; held on hold/part1 until the combined release)
 - 🟡 Appointments (customer): Upcoming and Past, shop names, dates, prices in the right currency; Book again, Save this style, Remind me (built; held on hold/part1 until the combined release)
 - 🟡 Saved shops, and a Save shop button on every shop page (built; held on hold/part1 until the combined release)
+- 🟡 PRIVACY HOTFIX, LIVE: "shops I follow" no longer sends shop owners' ID numbers, ID photos or legal names (deployed and verified by Claude; every other list route on the live server checked and found properly protected)
 - 🟡 Customer privacy and safety fixes: Saved shops no longer sends shop owners' ID documents, legal names or phone numbers; nobody can follow as someone else; Save This Style photos must be real uploads; Book again has the same checks as booking; Remind Me intervals 1 week to 1 year (built; held on hold/part1 until the combined release)
 - ⬜ Messages, split view on larger screens (`backend ready`)
-- ⬜ **Next update:** customer QR: a logged-in professional scans it to check the customer in, link the visit to their history and add them as a customer, and the customer confirms on their own phone; anyone else who scans sees nothing personal (`backend needed`)
+- 🟡 Customer QR check-in: a professional scans or types the customer's code and checks them in; the customer's name is shown ONLY if they already have an appointment together; the customer is notified and both see the check-in time; showing the code is the customer's consent (built; held on hold/part1 until the combined release)
 
 ## Phase 5 — Professional workspace
 
 - 🔨 Home: today, pending requests, next actions (basic version live)
-- 🔨 Real appointment dates and times: stored with every new request; "who's coming today" view still to build
-- ⬜ Calendar: day view first (needs the item above)
+- 🟡 Real appointment dates: a Today view (who's coming, in time order, opens by default when someone's booked) and Upcoming grouped by day (built; held on hold/part1 until the combined release)
+- 🟡 Calendar, day view: Today plus a by-day Upcoming list (built; held on hold/part1 until the combined release); a full week calendar comes later
 - 🟡 Services: add, edit, hide, delete, with price, duration, description and a work photo (on staging)
 - 🟡 Shop and profile editing: profile and cover photos, description, category, area, availability, GPS location, completeness checklist (on staging)
 - 🟡 How I work: salon, home, mobile, by appointment (on staging)
