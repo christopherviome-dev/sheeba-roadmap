@@ -116,7 +116,8 @@ Not all of this is code.
 - ⬜ End-to-end journey tests: customer, professional, admin
 - ⬜ Device checks: phone, tablet landscape, desktop
 - ⬜ Ask NIA whether regulation L.I. 2523 applies to Sheeba's ID checks
-- ⬜ **Next update (Part 2):** works outside Ghana: country chosen at signup; currency, phone formats, distances (miles in the UK), ID documents per country instead of only the Ghana Card; Discover shows shops in your own country
+- 🟡 Works outside Ghana (Ghana and the UK to start; adding a country = one entry): country at signup sets the shop's currency; phone logins in any local or international format; miles in the UK; ID documents per country (UK: passport, driving licence or residence permit; duplicates caught across document types); Discover shows your own country's shops with local budgets; WhatsApp links per country (built; held on hold/part1 until the combined release)
+- 🟡 Phone numbers stored in one tidy form, so a number saved with spaces can be found from any format (checked: no existing account needed fixing)
 - ⬜ Clear all test data before launch: test shops, test ID submissions, and any photo not taken by the professional themselves
 - ⬜ Sheeba Help: one help guide written from the real app, with an assistant that answers only from it; a Help chat inside Sheeba (reaches everyone) and the existing Telegram bot connected to the same brain; anything account-specific handed to the admin as a ticket; never asks for passwords or ID numbers; WhatsApp later (Meta approval and fees); Discord skipped
 - ⬜ Point sheeba.online to the new site
