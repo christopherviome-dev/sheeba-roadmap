@@ -37,34 +37,36 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 - 🟡 Login accepts every normal way of writing a Ghana number (0544…, +233 54…, with spaces)
 - 🟡 Navigation between Discover, My Shop and Admin, and Admin's own login page (on staging)
 - 🟡 Security fixes: customer names, phone numbers and emergency contacts no longer public, no requests in someone else's name, no point farming, no booking theft, no fake ratings, crash protection (backend; name and phone privacy confirmed live by Christopher)
+- 🟡 Shop data protection: every field checked, photos must be real uploads (no tracking images), per-photo and per-shop storage limits so no shop can lock itself out
 
 ## Phase 1 — Launch blockers
 
 These stop the core journey from working. They come first.
 
 - 🟡 Admin: approve new shops, so new professionals become visible to customers: card grid with a detail panel, bright admin theme (tested on staging by Christopher; goes live with the October 1 release)
-- 🟡 Professional: accept, decline and complete requests from the dashboard, with call and WhatsApp buttons (on staging)
-- 🟡 Customer: send a request or booking from a shop page, with date and time (on staging)
+- 🟡 Professional: accept, decline and complete requests from the dashboard, with call and WhatsApp buttons (tested on staging by Christopher)
+- 🟡 Customer: send a request or booking from a shop page, with date and time (tested on staging by Christopher)
 
 ## Phase 2 — Interface foundation
 
 - 🟡 Mobile-first layout: bottom tab bar on phones, top tabs on larger screens (on staging); tablet-landscape polish continues page by page
 - 🔨 Design tokens: colours done (named by meaning, every text colour checked for readability in both themes); spacing, type sizes and radius still to do
-- 🟡 Light, dark and Auto themes: readable in both, works on older phones, no white flash on load (on staging)
+- 🟡 Light, dark and Auto themes: readable in both, works on older phones, no white flash on load (tested on staging by Christopher)
 - 🟡 Toast pop-ups (built and live, reusable)
 - 🟡 Shared loading, error and empty states with a next step (on staging; used on Discover and My Requests, added to other lists as they're built)
-- 🟡 App shell: one navigation on every page, role-aware (Admin tab only for admins), kept short (on staging)
+- 🟡 App shell: one navigation on every page, role-aware (Admin tab only for admins), kept short (tested on staging by Christopher)
 
 ## Phase 3 — Discovery
 
-- ⬜ Visual discovery layout: featured area, horizontal rows, inspiration grid (`backend ready`)
-- ⬜ Professional, style and service cards
-- 🔨 Public professional page: portfolio, services, prices, clear action (basic version live)
+- 🟡 Visual Discover: Live strip, rows (Near you, New looks, Loved on Sheeba, Popular this week, Professionals), masonry Explore feed, search Focus mode, context panel that opens in place (on staging)
+- 🟡 Lean Discover feed: small photo versions and no private data, about 25x less mobile data than loading full shops (on staging)
+- 🟡 Work tiles (photo, service, price, heart) and professional cards (availability, price from, how they work) (on staging)
+- 🔨 Public professional page: photos, work per service, How I work, a Book button at the top, visits counted (on staging); reviews and portfolio gallery still to do
 - ⬜ Style library: named styles by category, with other names for search (`backend needed`)
 - ⬜ Inspiration photos: licensed for commercial use, credited, clearly labelled "Inspiration", never shown as anyone's portfolio
 - ⬜ Professionals tag their uploaded work with a style, so every style leads to people who actually do it (`backend needed`)
-- ⬜ Trending from real Sheeba engagement: views, saves, requests per style (`backend needed`)
-- ⬜ Live Mode basics: a featured row that gently rotates, pauses when touched, respects reduced-motion settings
+- 🔨 Trending from real engagement: "Loved on Sheeba" (hearts) and "Popular this week" (shop visits) are real and on staging; per-style trending waits for the style library
+- 🟡 Live Mode basics: featured strip drifts gently, pauses on hover, touch or focus, stops in search, never moves with reduced-motion settings (on staging)
 
 ## Phase 4 — Customer workspace
 
@@ -79,9 +81,9 @@ These stop the core journey from working. They come first.
 - 🔨 Home: today, pending requests, next actions (basic version live)
 - 🔨 Real appointment dates and times: stored with every new request; "who's coming today" view still to build
 - ⬜ Calendar: day view first (needs the item above)
-- ⬜ Services: add, edit, price, duration (`backend ready`)
-- ⬜ Shop and profile editing: photos, bio, availability, location (`backend ready`)
-- ⬜ How I work: salon, home, mobile, by appointment (`backend needed`, small)
+- 🟡 Services: add, edit, hide, delete, with price, duration, description and a work photo (on staging)
+- 🟡 Shop and profile editing: profile and cover photos, description, category, area, availability, GPS location, completeness checklist (on staging)
+- 🟡 How I work: salon, home, mobile, by appointment (on staging)
 - ⬜ Customers: list plus detail, private notes, history, due soon (`backend ready`)
 - ⬜ Messages (`backend ready`)
 - ⬜ Earnings statement: recorded service value, not payments (`backend ready`)
@@ -135,6 +137,7 @@ Everything above must be ✅ before inviting the public. Everything below comes 
 - Payments: switch on Paystack
 - Community feedback from Telegram in Admin
 - Admin analytics
+- Move photos to cloud storage with automatic small versions (keeps data costs low as Sheeba grows past a few hundred shops)
 
 ## Future
 
