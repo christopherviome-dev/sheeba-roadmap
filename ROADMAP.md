@@ -85,6 +85,13 @@ Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; late
 - 🟡 My Shop reorganised like X: a clean Home (needs your answer, today, unread messages, apprentice work, this week, next step), and everything else in a menu behind the profile picture (drawer on phones, sidebar on larger screens), with count badges; nothing removed (on staging)
 - 🟡 Profiles: professionals get a Profile page (photo, Verified and Founding badges, loves, jobs completed, customers served, work posted, services, saves, joined date); customers get a profile card with photo, badge and numbers at the top of My Sheeba (on staging)
 - 🟡 Social proof on public shop pages: "♥ 124 loves · 38 jobs done on Sheeba" (on staging)
+- 🟡 Bottom bar: visitors Discover · Search · Sign in; customers Discover · Search · Bookings · Inbox · Profile; professionals Discover · Search · My Shop (+ Admin) (on staging)
+- 🟡 Search is its own screen: type or speak, local-price budgets, services, inspiration styles; results as Looks, Professionals and Styles (on staging)
+- 🟡 Posts TikTok-style: actions down the right (picture with + to follow, likes with count, message, share), name and 📍 location over the photo, Book underneath, double-tap to like (on staging)
+- 🟡 Follow like TikTok (visitors sign in first); "Saved shops" is now "Following" everywhere; follower counts on professionals (counts only) (on staging)
+- ⬜ NEXT: Admin analytics (members and growth, shops by place, bookings and completion, recorded value, founding members, reports, anonymous demand trends)
+- ⬜ NEXT: Snapchat-style map of shops on free OpenStreetMap (no paid map service), zoom from country to street, counts by city and area
+- ⬜ NEXT: Super admin and team roles (Verifier, Moderator, Support, Analyst), every action logged under their name
 
 ## Phase 1 — Launch blockers
 
