@@ -42,7 +42,7 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 
 ## Feedback round 1 (from Christopher's full test) — next build
 
-Build order to be confirmed once Christopher's feedback is complete (first proposal: A → E → B → D → C, with F, G, H to slot in).
+Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; later H2 (video). One combined push after Round 3.
 
 - 🟡 A. Accidental pull-down refresh wiped half-filled forms: switch off pull-to-refresh app-wide and keep half-filled forms through reloads (never passwords) (built; held on hold/feedback1)
 - 🟡 A. Location control becomes a small on/off icon, like a phone's location toggle (built; held on hold/feedback1)
@@ -53,12 +53,14 @@ Build order to be confirmed once Christopher's feedback is complete (first propo
 - ⬜ B. Compare prices across cities and countries (within a country exact; across countries each local price plus a clearly marked approximate conversion)
 - ⬜ B. For stylists: "what others nearby charge" beside their prices
 - ⬜ B. Shops choose a city (area stays as the neighbourhood); a place's price range shows only once 3+ professionals there have prices
+- 🟡 Age policy (admin switch, off by default): 18+ for customers and professionals via one checkbox; apprentices from 15 (Children's Act, 1998, s.98) with a parent or guardian's name, phone and consent; under-18 apprentices never public, no direct bookings; stated in the Terms (built; held on hold/feedback1)
+- 🟡 Stricter invite checks: a referral counts only when the invited person completes a genuine first job; checked for 7 days then confirmed automatically; warning signs (inviter on the job, first job within 24 hours of joining, repeated referrals completing with the same professional) go to admin review; no cash payouts (built; held on hold/feedback1)
 - ⬜ D. Two-level services: Services (Hair styling, Barbering, Makeup, Nails, Lashes & brows, Skin & spa…) each with their own styles; Barbering is a service, not a style
 - ⬜ D. Professionals can add an activity that isn't listed: shows on their shop at once, goes to admin review, becomes available to everyone once approved
 - ⬜ C. Optional customer onboarding after signup: "Show me styles for" (men's grooming / women's / both / prefer not to say) and "Pick your 3 favourites"; feed ranking uses it (men see barbering first unless their favourites include braids, locs, etc.); editable in My Sheeba; never shown to professionals
-- ⬜ F. Invite rewards become future coupons: no cash while Sheeba takes no payments; rewards build up (shown in money terms) and become coupon codes for a free or discounted service once Sheeba is monetised; admin "mark as paid" becomes a ledger. BUG: UK accounts show "GH₵1". DECIDED: every invite is worth the equivalent of GH₵1 at the real exchange rate; rewards recorded in cedis (one clean liability figure), shown as the local equivalent at today's rate (e.g. GH₵1 ≈ £0.07), converted at that day's rate when coupons are issued; daily rates from an exchange-rate source (shared with the cross-country price comparison)
-- ⬜ F. Founding members: every account gets a signup number (existing accounts numbered by join date); members #1–1,000 are founding members; the 1,000th signup is celebrated as a milestone; friendly name-based code (e.g. AKUA0042) for sharing and invites, while the QR carries a hidden secret for check-in (friendly codes are guessable)
-- ⬜ F. Terms and Privacy pages (needed before launch anyway), including an optional clause: professionals may choose to reward customers who refer others
+- 🟡 F. Invite rewards become future coupons: no cash while Sheeba takes no payments; rewards build up (shown in money terms) and become coupon codes for a free or discounted service once Sheeba is monetised; admin "mark as paid" becomes a ledger. BUG: UK accounts show "GH₵1". DECIDED: every invite is worth the equivalent of GH₵1 at the real exchange rate; rewards recorded in cedis (one clean liability figure), shown as the local equivalent at today's rate (e.g. GH₵1 ≈ £0.07), converted at that day's rate when coupons are issued; daily rates from an exchange-rate source (shared with the cross-country price comparison) (built; held on hold/feedback1)
+- 🟡 F. Founding members: every account gets a signup number (existing accounts numbered by join date); members #1–1,000 are founding members; the 1,000th signup is celebrated as a milestone; friendly name-based code (e.g. AKUA0042) for sharing and invites, while the QR carries a hidden secret for check-in (friendly codes are guessable) (built; held on hold/feedback1)
+- 🟡 F. Terms and Privacy pages (needed before launch anyway), including an optional clause: professionals may choose to reward customers who refer others (built; held on hold/feedback1)
 - 🟡 G. Customers never see My Shop: customer tabs are Discover, Appointments, My Sheeba, Saved; professionals enter through a separate "For professionals" entrance (built; held on hold/feedback1)
 - 🟡 G. Share button opens the phone's own share menu (WhatsApp, Instagram, TikTok, Facebook, SMS…), with buttons as a fallback on computers (built; held on hold/feedback1)
 - 🟡 G. Invite page adds "I'm training (apprentice)": short signup asking for the supervisor's code; the shop owner approves the link (built; held on hold/feedback1)
