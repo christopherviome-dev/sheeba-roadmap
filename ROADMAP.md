@@ -110,7 +110,7 @@ These stop the core journey from working. They come first.
 - 🟡 Saved shops, and a Save shop button on every shop page (built; held on hold/part1 until the combined release)
 - 🟡 PRIVACY HOTFIX, LIVE: "shops I follow" no longer sends shop owners' ID numbers, ID photos or legal names (deployed and verified by Claude; every other list route on the live server checked and found properly protected)
 - 🟡 Customer privacy and safety fixes: Saved shops no longer sends shop owners' ID documents, legal names or phone numbers; nobody can follow as someone else; Save This Style photos must be real uploads; Book again has the same checks as booking; Remind Me intervals 1 week to 1 year (built; held on hold/part1 until the combined release)
-- ⬜ Messages, split view on larger screens (`backend ready`)
+- 🟡 Messages between customers and professionals: split view on larger screens, photos, refreshes every 10 seconds; only live shops can be messaged, restricted accounts can't send, limits against spam (on staging)
 - 🟡 Customer QR check-in: a professional scans or types the customer's code and checks them in; the customer's name is shown ONLY if they already have an appointment together; the customer is notified and both see the check-in time; showing the code is the customer's consent (built; held on hold/part1 until the combined release)
 
 ## Phase 5 — Professional workspace
@@ -121,9 +121,9 @@ These stop the core journey from working. They come first.
 - 🟡 Services: add, edit, hide, delete, with price, duration, description and a work photo (on staging)
 - 🟡 Shop and profile editing: profile and cover photos, description, category, area, availability, GPS location, completeness checklist (on staging)
 - 🟡 How I work: salon, home, mobile, by appointment (on staging)
-- ⬜ Customers: list plus detail, private notes, history, due soon (`backend ready`)
-- ⬜ Messages (`backend ready`)
-- ⬜ Earnings statement: recorded service value, not payments (`backend ready`)
+- 🟡 Customers: everyone who has booked, due-for-next-visit list, full history, private notes (add and delete) (on staging)
+- 🟡 Messages with customers, in My Shop (on staging)
+- 🟡 Earnings: recorded service value by period and by service, new vs repeat customers, dated by completion; clearly not payments (on staging)
 - 🟡 Sheeba code for every account (e.g. K7M 2QX): permanent for life across roles, random, never guessable; short link /u/CODE; QR to show, download, print for the salon and share on WhatsApp; older accounts get theirs automatically (built; held on branch hold/part1 until the combined release)
 - 🟡 Invite rewards: GH₵1 when someone joins with your code and completes their first job; shown under Share & earn (professionals) and My Requests (customers); admin reviews each qualifying job, pays by hand and records the reference; flag when the inviter was on the job (built; held on branch hold/part1 until the combined release)
 - ⬜ Apprentice and staff access: the MVP version of the trainee system (`backend ready`)
