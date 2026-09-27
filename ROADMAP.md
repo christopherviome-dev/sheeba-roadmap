@@ -82,6 +82,9 @@ Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; late
 - 🟡 Footer: Terms · Privacy · Settings, plus Telegram and WhatsApp community logos (official logo files from each brand's own resources) (on staging)
 - 🟡 WhatsApp community link added (footer and Settings) (on staging)
 - 🟡 My Sheeba tidied: log out, password and feed preferences now live only in Settings (on staging)
+- 🟡 My Shop reorganised like X: a clean Home (needs your answer, today, unread messages, apprentice work, this week, next step), and everything else in a menu behind the profile picture (drawer on phones, sidebar on larger screens), with count badges; nothing removed (on staging)
+- 🟡 Profiles: professionals get a Profile page (photo, Verified and Founding badges, loves, jobs completed, customers served, work posted, services, saves, joined date); customers get a profile card with photo, badge and numbers at the top of My Sheeba (on staging)
+- 🟡 Social proof on public shop pages: "♥ 124 loves · 38 jobs done on Sheeba" (on staging)
 
 ## Phase 1 — Launch blockers
 
