@@ -80,7 +80,8 @@ Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; late
 - 🟡 Discover icon is a compass; top bar is just the location pin and Settings; country moved to Settings (set automatically at signup) (on staging)
 - 🟡 Settings for every user: account, appearance (light/dark), country, location, feed preferences, clear what's been learned, password, community, terms and privacy, log out (on staging)
 - 🟡 Footer: Terms · Privacy · Settings, plus Telegram and WhatsApp community logos (official logo files from each brand's own resources) (on staging)
-- ⏸ Christopher to share the WhatsApp community link (the WhatsApp logo appears once it's added)
+- 🟡 WhatsApp community link added (footer and Settings) (on staging)
+- 🟡 My Sheeba tidied: log out, password and feed preferences now live only in Settings (on staging)
 
 ## Phase 1 — Launch blockers
 
