@@ -139,7 +139,7 @@ These stop the core journey from working. They come first.
 - 🟡 Reports and restrictions: customers report professionals (shop page or any booking), professionals report customers they had a booking with; categories, emergency number first (112 Ghana / 999 UK), 5 per 15 minutes per address; admin queue with notes and states; restrict or restore customers AND professionals from a report, with a reason they're told
 - 🟡 Password recovery: "Forgot password?" for everyone, admin help queue confirmed by calling the number on the account, temporary password that must be changed (on staging)
 - 🟡 Password guessing stopped (5 wrong per account / 20 per address → 15-minute pause) and login no longer reveals whether a number has an account (LIVE, verified by Claude)
-- ⬜ Public shop data still lists follower and like ID codes: show counts instead, keeping follow buttons working (low risk)
+- ⬜ Public shop data still lists follower and like ID codes: show counts instead, keeping follow buttons working (scheduled with the switch to the new site) (low risk)
 - ⬜ Professionals and users: search, table, detail panel (`backend ready`)
 - ✅ Audit log of admin actions
 
@@ -157,6 +157,9 @@ Not all of this is code.
 - 🟡 Phone numbers stored in one tidy form, so a number saved with spaces can be found from any format (checked: no existing account needed fixing)
 - ⬜ Clear all test data before launch: test shops, test ID submissions, and any photo not taken by the professional themselves
 - ⬜ Sheeba Help: one help guide written from the real app, with an assistant that answers only from it; a Help chat inside Sheeba (reaches everyone) and the existing Telegram bot connected to the same brain; anything account-specific handed to the admin as a ticket; never asks for passwords or ID numbers; WhatsApp later (Meta approval and fees); Discord skipped
+- 🟡 Full engineering review (27 Sep): 134 routes inventoried; dependencies audited (0 known vulnerabilities, backend and frontend); every internal link checked (none dead). Fixed: public shop records no longer reveal the admin account, minors, staff lists, restriction details or verification dates; public locations rounded to ~1 km (home-based professionals' front doors stay private; owners and admin still see exact); flood ceiling on anonymous follows/likes/visits (300 per 15 minutes per address, generous for shared mobile networks); anonymous bookings capped (20 per 15 minutes per address); customer names, savings goals and marketing links properly checked; reminders measured from completion (live backend, verified by Claude)
+- ⬜ At the switch to the new site (needs the old site retired first): public shop data becomes an allow-list (only fields meant to be public); follower and like ID lists become counts; hide Group Points and "last active" from public records
+- ⬜ Popularity that can't be faked: give logged-in accounts more weight than anonymous visitors in "Popular this week", "Loved on Sheeba" and ranking (anonymous counts can never be fully fake-proof)
 - ⬜ Point sheeba.online to the new site
 - ⬜ Retire the old versions once the switch is confirmed
 
