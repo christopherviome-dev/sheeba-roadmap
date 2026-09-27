@@ -126,7 +126,9 @@ These stop the core journey from working. They come first.
 - 🟡 Earnings: recorded service value by period and by service, new vs repeat customers, dated by completion; clearly not payments (on staging)
 - 🟡 Sheeba code for every account (e.g. K7M 2QX): permanent for life across roles, random, never guessable; short link /u/CODE; QR to show, download, print for the salon and share on WhatsApp; older accounts get theirs automatically (built; held on branch hold/part1 until the combined release)
 - 🟡 Invite rewards: GH₵1 when someone joins with your code and completes their first job; shown under Share & earn (professionals) and My Requests (customers); admin reviews each qualifying job, pays by hand and records the reference; flag when the inviter was on the job (built; held on branch hold/part1 until the combined release)
-- ⬜ Apprentice and staff access: the MVP version of the trainee system (`backend ready`)
+- 🟡 Apprentice and staff access: apprentices and staff see and work on the shop's requests, labelled "For <shop>" (on staging)
+- 🟡 Trainee workspace (wireframe 08): My Training (progress, expected completion, this week's focus, skills the apprentice marks practising and only the supervisor signs off, feedback); supervisor's training editor with ready-made skill lists per service; graduation to independent professional keeping code and history; under-18s graduate at 18 (on staging)
+- 🟡 Apprentice work progress: apprentices post photos of their work (optionally linked to a skill) for their supervisor to approve or send back with a comment; approving can also sign off the skill and show it on the shop page under "Our apprentices' work" (never for under-18s; first name and thumbnail only) (on staging)
 - 🟡 Change password, for professionals and customers (on staging)
 
 ## Phase 6 — Admin control center
