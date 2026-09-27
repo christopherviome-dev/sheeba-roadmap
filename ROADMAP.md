@@ -44,32 +44,32 @@ Tags: `backend ready` means the server side already exists and is live, so only 
 
 Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; later H2 (video). One combined push after Round 3.
 
-- 🟡 A. Accidental pull-down refresh wiped half-filled forms: switch off pull-to-refresh app-wide and keep half-filled forms through reloads (never passwords) (built; in the combined release)
-- 🟡 A. Location control becomes a small on/off icon, like a phone's location toggle (built; in the combined release)
-- 🟡 A. Countries shown as flag + code (🇬🇭 GH, 🇬🇧 UK) (built; in the combined release)
-- 🟡 E. Every country at signup (searchable, flag + name); Ghana and UK keep full setup; other countries get their currency, international phone numbers, and passport / national ID / driving licence verification; uses a maintained open-source country list (built; in the combined release)
-- 🟡 B. Feed follows the user's location automatically; a small "📍 City · GH" label opens change-location / compare instead of big country buttons (built; in the combined release)
-- 🟡 B. "Any budget" replaced by real local price ranges from what professionals in the area charge, per category ("Up to GH₵120 · typical near you") (built; in the combined release)
-- 🟡 B. Compare prices across cities and countries (within a country exact; across countries each local price plus a clearly marked approximate conversion) (built; in the combined release)
-- 🟡 B. For stylists: "what others nearby charge" beside their prices (built; in the combined release)
-- 🟡 B. Shops choose a city (area stays as the neighbourhood); a place's price range shows only once 3+ professionals there have prices (built; in the combined release)
-- 🟡 Age policy (admin switch, off by default): 18+ for customers and professionals via one checkbox; apprentices from 15 (Children's Act, 1998, s.98) with a parent or guardian's name, phone and consent; under-18 apprentices never public, no direct bookings; stated in the Terms (built; in the combined release)
-- 🟡 Stricter invite checks: a referral counts only when the invited person completes a genuine first job; checked for 7 days then confirmed automatically; warning signs (inviter on the job, first job within 24 hours of joining, repeated referrals completing with the same professional) go to admin review; no cash payouts (built; in the combined release)
-- 🟡 D. Two-level services: Services (Hair styling, Barbering, Makeup, Nails, Lashes & brows, Skin & spa…) each with their own styles; Barbering is a service, not a style (built; in the combined release)
-- 🟡 D. Professionals can add an activity that isn't listed: shows on their shop at once, goes to admin review, becomes available to everyone once approved (built; in the combined release)
-- 🟡 C. Optional customer onboarding after signup: "Show me styles for" (men's grooming / women's / both / prefer not to say) and "Pick your 3 favourites"; feed ranking uses it (men see barbering first unless their favourites include braids, locs, etc.); editable in My Sheeba; never shown to professionals (built; in the combined release)
-- 🟡 F. Invite rewards become future coupons: no cash while Sheeba takes no payments; rewards build up (shown in money terms) and become coupon codes for a free or discounted service once Sheeba is monetised; admin "mark as paid" becomes a ledger. BUG: UK accounts show "GH₵1". DECIDED: every invite is worth the equivalent of GH₵1 at the real exchange rate; rewards recorded in cedis (one clean liability figure), shown as the local equivalent at today's rate (e.g. GH₵1 ≈ £0.07), converted at that day's rate when coupons are issued; daily rates from an exchange-rate source (shared with the cross-country price comparison) (built; in the combined release)
-- 🟡 F. Founding members: every account gets a signup number (existing accounts numbered by join date); members #1–1,000 are founding members; the 1,000th signup is celebrated as a milestone; friendly name-based code (e.g. AKUA0042) for sharing and invites, while the QR carries a hidden secret for check-in (friendly codes are guessable) (built; in the combined release)
-- 🟡 F. Terms and Privacy pages (needed before launch anyway), including an optional clause: professionals may choose to reward customers who refer others (built; in the combined release)
-- 🟡 G. Customers never see My Shop: customer tabs are Discover, Appointments, My Sheeba, Saved; professionals enter through a separate "For professionals" entrance (built; in the combined release)
-- 🟡 G. Share button opens the phone's own share menu (WhatsApp, Instagram, TikTok, Facebook, SMS…), with buttons as a fallback on computers (built; in the combined release)
-- 🟡 G. Invite page adds "I'm training (apprentice)": short signup asking for the supervisor's code; the shop owner approves the link (built; in the combined release)
-- 🟡 G. Phone numbers the international way: flag + dial-code picker (🇬🇧 +44) on every signup and login; starts on the inviter's country (built; in the combined release)
-- 🟡 G. The invite code at signup explained: "Invited by Grace's Studio", with a way to change it (built; in the combined release)
-- 🟡 G. Customer self check-in: a customer with an appointment today scans the shop's QR on arrival and gets "I'm here: check in" (built; in the combined release)
-- 🟡 H. A feed that learns from behaviour (what people view, linger on, heart, save, search and book), plus voice search the user chooses to use (tap the mic, say what you want). No secret listening: illegal under Ghana and UK data law, blocked by browsers, and it would destroy trust (built; in the combined release)
+- 🟡 A. Accidental pull-down refresh wiped half-filled forms: switch off pull-to-refresh app-wide and keep half-filled forms through reloads (never passwords) (on staging)
+- 🟡 A. Location control becomes a small on/off icon, like a phone's location toggle (on staging)
+- 🟡 A. Countries shown as flag + code (🇬🇭 GH, 🇬🇧 UK) (on staging)
+- 🟡 E. Every country at signup (searchable, flag + name); Ghana and UK keep full setup; other countries get their currency, international phone numbers, and passport / national ID / driving licence verification; uses a maintained open-source country list (on staging)
+- 🟡 B. Feed follows the user's location automatically; a small "📍 City · GH" label opens change-location / compare instead of big country buttons (on staging)
+- 🟡 B. "Any budget" replaced by real local price ranges from what professionals in the area charge, per category ("Up to GH₵120 · typical near you") (on staging)
+- 🟡 B. Compare prices across cities and countries (within a country exact; across countries each local price plus a clearly marked approximate conversion) (on staging)
+- 🟡 B. For stylists: "what others nearby charge" beside their prices (on staging)
+- 🟡 B. Shops choose a city (area stays as the neighbourhood); a place's price range shows only once 3+ professionals there have prices (on staging)
+- 🟡 Age policy (admin switch, off by default): 18+ for customers and professionals via one checkbox; apprentices from 15 (Children's Act, 1998, s.98) with a parent or guardian's name, phone and consent; under-18 apprentices never public, no direct bookings; stated in the Terms (on staging)
+- 🟡 Stricter invite checks: a referral counts only when the invited person completes a genuine first job; checked for 7 days then confirmed automatically; warning signs (inviter on the job, first job within 24 hours of joining, repeated referrals completing with the same professional) go to admin review; no cash payouts (on staging)
+- 🟡 D. Two-level services: Services (Hair styling, Barbering, Makeup, Nails, Lashes & brows, Skin & spa…) each with their own styles; Barbering is a service, not a style (on staging)
+- 🟡 D. Professionals can add an activity that isn't listed: shows on their shop at once, goes to admin review, becomes available to everyone once approved (on staging)
+- 🟡 C. Optional customer onboarding after signup: "Show me styles for" (men's grooming / women's / both / prefer not to say) and "Pick your 3 favourites"; feed ranking uses it (men see barbering first unless their favourites include braids, locs, etc.); editable in My Sheeba; never shown to professionals (on staging)
+- 🟡 F. Invite rewards become future coupons: no cash while Sheeba takes no payments; rewards build up (shown in money terms) and become coupon codes for a free or discounted service once Sheeba is monetised; admin "mark as paid" becomes a ledger. BUG: UK accounts show "GH₵1". DECIDED: every invite is worth the equivalent of GH₵1 at the real exchange rate; rewards recorded in cedis (one clean liability figure), shown as the local equivalent at today's rate (e.g. GH₵1 ≈ £0.07), converted at that day's rate when coupons are issued; daily rates from an exchange-rate source (shared with the cross-country price comparison) (on staging)
+- 🟡 F. Founding members: every account gets a signup number (existing accounts numbered by join date); members #1–1,000 are founding members; the 1,000th signup is celebrated as a milestone; friendly name-based code (e.g. AKUA0042) for sharing and invites, while the QR carries a hidden secret for check-in (friendly codes are guessable) (on staging)
+- 🟡 F. Terms and Privacy pages (needed before launch anyway), including an optional clause: professionals may choose to reward customers who refer others (on staging)
+- 🟡 G. Customers never see My Shop: customer tabs are Discover, Appointments, My Sheeba, Saved; professionals enter through a separate "For professionals" entrance (on staging)
+- 🟡 G. Share button opens the phone's own share menu (WhatsApp, Instagram, TikTok, Facebook, SMS…), with buttons as a fallback on computers (on staging)
+- 🟡 G. Invite page adds "I'm training (apprentice)": short signup asking for the supervisor's code; the shop owner approves the link (on staging)
+- 🟡 G. Phone numbers the international way: flag + dial-code picker (🇬🇧 +44) on every signup and login; starts on the inviter's country (on staging)
+- 🟡 G. The invite code at signup explained: "Invited by Grace's Studio", with a way to change it (on staging)
+- 🟡 G. Customer self check-in: a customer with an appointment today scans the shop's QR on arrival and gets "I'm here: check in" (on staging)
+- 🟡 H. A feed that learns from behaviour (what people view, linger on, heart, save, search and book), plus voice search the user chooses to use (tap the mic, say what you want). No secret listening: illegal under Ghana and UK data law, blocked by browsers, and it would destroy trust (on staging)
 - ⬜ H. Video feed of professionals' work (scrolling, like Reels): needs cloud storage with automatic compression first, and data-saving playback (no autoplay on mobile data unless chosen)
-- 🟡 D. Load Christopher's style spreadsheet (received: 15 rows, Pexels, credited) into the style library: 11 distinct styles, with the 4 general braiding photos merged in as extra photos; shown only as "Inspiration" (built; in the combined release)
+- 🟡 D. Load Christopher's style spreadsheet (received: 15 rows, Pexels, credited) into the style library: 11 distinct styles, with the 4 general braiding photos merged in as extra photos; shown only as "Inspiration" (on staging)
 - ⏸ Christopher to gather more styles in the same format: men's barbering (fades, low cut, waves, beard, shape-ups), makeup, nails, lashes
 
 ## Phase 1 — Launch blockers
@@ -96,9 +96,9 @@ These stop the core journey from working. They come first.
 - ⏸ Category drawings: ON HOLD. The first draft didn't represent the categories well; text categories stay until Christopher provides proper designs to build from
 - 🟡 Work tiles (photo, service, price, heart) and professional cards (availability, price from, how they work) (on staging)
 - 🔨 Public professional page: photos, work per service, How I work, a Book button at the top, visits counted (on staging); reviews and portfolio gallery still to do
-- ⬜ Style library: named styles by category, with other names for search (`backend needed`)
-- ⬜ Inspiration photos: licensed for commercial use, credited, clearly labelled "Inspiration", never shown as anyone's portfolio
-- ⬜ Professionals tag their uploaded work with a style, so every style leads to people who actually do it (`backend needed`)
+- 🟡 Style library: 6 services, 34 styles with other names for search; professionals can propose new services (built Round 2; on staging)
+- 🟡 Inspiration photos: first 15 from Christopher's spreadsheet (Pexels, credited, labelled "Inspiration", served from Sheeba itself) (on staging); more to gather for barbering, makeup, nails, lashes
+- 🟡 Professionals tag each service with a style, so every inspiration photo leads to people who actually do it (built Round 2; on staging)
 - 🔨 Trending from real engagement: "Loved on Sheeba" (hearts) and "Popular this week" (shop visits) are real and on staging; per-style trending waits for the style library
 - 🟡 Live Mode basics: featured strip drifts gently, pauses on hover, touch or focus, stops in search, never moves with reduced-motion settings (on staging)
 
@@ -134,9 +134,9 @@ These stop the core journey from working. They come first.
 - 🔨 Separate admin environment (basic version live)
 - 🟡 ID verification queue (built, not yet tested)
 - 🟡 Shop review queue (see Phase 1)
-- ⬜ Reports and account restrictions (`backend ready`)
+- 🟡 Reports and restrictions: customers report professionals (shop page or any booking), professionals report customers they had a booking with; categories, emergency number first (112 Ghana / 999 UK), 5 per 15 minutes per address; admin queue with notes and states; restrict or restore customers AND professionals from a report, with a reason they're told
 - 🟡 Password recovery: "Forgot password?" for everyone, admin help queue confirmed by calling the number on the account, temporary password that must be changed (on staging)
-- ⬜ Limit repeated wrong-password attempts, to stop password guessing (`backend needed`)
+- 🟡 Password guessing stopped (5 wrong per account / 20 per address → 15-minute pause) and login no longer reveals whether a number has an account (LIVE, verified by Claude)
 - ⬜ Public shop data still lists follower and like ID codes: show counts instead, keeping follow buttons working (low risk)
 - ⬜ Professionals and users: search, table, detail panel (`backend ready`)
 - ✅ Audit log of admin actions
