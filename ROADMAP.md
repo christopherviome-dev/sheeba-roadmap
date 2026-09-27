@@ -72,6 +72,16 @@ Build order: Round 1 = A, E, G, F (built); Round 2 = D; Round 3 = B, C, H1; late
 - 🟡 D. Load Christopher's style spreadsheet (received: 15 rows, Pexels, credited) into the style library: 11 distinct styles, with the 4 general braiding photos merged in as extra photos; shown only as "Inspiration" (on staging)
 - ⏸ Christopher to gather more styles in the same format: men's barbering (fades, low cut, waves, beard, shape-ups), makeup, nails, lashes
 
+## Feedback round 2 (27 Sep) — Discover redesign and Settings
+
+- 🟡 Discover is one Instagram-style vertical feed: posts show the professional, their work large, love (double-tap too), share and Book; inspiration posts woven in; more posts load as you scroll (on staging)
+- 🟡 Services roll across the top automatically (pause on touch; still for reduced-motion users); the chosen service is pinned (on staging)
+- 🟡 Tapping inspiration opens a detail view: photos, other names, typical price nearby, and who does it near you; tapping Discover again or pressing Back returns to the feed (on staging)
+- 🟡 Discover icon is a compass; top bar is just the location pin and Settings; country moved to Settings (set automatically at signup) (on staging)
+- 🟡 Settings for every user: account, appearance (light/dark), country, location, feed preferences, clear what's been learned, password, community, terms and privacy, log out (on staging)
+- 🟡 Footer: Terms · Privacy · Settings, plus Telegram and WhatsApp community logos (official logo files from each brand's own resources) (on staging)
+- ⏸ Christopher to share the WhatsApp community link (the WhatsApp logo appears once it's added)
+
 ## Phase 1 — Launch blockers
 
 These stop the core journey from working. They come first.
